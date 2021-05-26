@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qur-17-pUU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="568"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="ZMh-ch-mZp" detailTextLabel="3gS-ab-B3I" style="IBUITableViewCellStyleSubtitle" id="98J-Zy-oWv">
@@ -50,6 +50,12 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="afz-si-TVO"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1y-tJ-Fx3">
+                                <rect key="frame" x="10" y="10" width="98" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -57,7 +63,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qur-17-pUU" secondAttribute="bottom" id="13U-gr-3zg"/>
                             <constraint firstItem="qur-17-pUU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8EE-MQ-4xD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qur-17-pUU" secondAttribute="trailing" id="CB3-Fr-ZRg"/>
-                            <constraint firstItem="qur-17-pUU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QGW-Jn-ngG"/>
+                            <constraint firstItem="V1y-tJ-Fx3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Hht-IU-DZv"/>
+                            <constraint firstItem="qur-17-pUU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="QGW-Jn-ngG"/>
+                            <constraint firstItem="V1y-tJ-Fx3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="QNN-wl-fci"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="JSON" image="tray.full.fill" catalog="system" id="R1a-J7-1pz"/>
@@ -78,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="inF-hy-0yk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="568"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="UNh-dn-ZgB" detailTextLabel="Xdb-WH-5YU" style="IBUITableViewCellStyleSubtitle" id="KVP-Bq-UtQ">
@@ -111,13 +119,21 @@
                                     <outlet property="delegate" destination="UU4-11-K6A" id="pU0-Ua-tgq"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noticias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlM-sj-TEU">
+                                <rect key="frame" x="10" y="10" width="106" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RdZ-nt-7rr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="PlM-sj-TEU" firstAttribute="top" secondItem="RdZ-nt-7rr" secondAttribute="top" constant="10" id="7rp-8A-ngo"/>
                             <constraint firstItem="RdZ-nt-7rr" firstAttribute="bottom" secondItem="inF-hy-0yk" secondAttribute="bottom" id="HXj-TY-EA5"/>
                             <constraint firstItem="RdZ-nt-7rr" firstAttribute="trailing" secondItem="inF-hy-0yk" secondAttribute="trailing" id="RQq-HS-lxZ"/>
-                            <constraint firstItem="inF-hy-0yk" firstAttribute="top" secondItem="RdZ-nt-7rr" secondAttribute="top" id="Ua2-C0-eZH"/>
+                            <constraint firstItem="inF-hy-0yk" firstAttribute="top" secondItem="RdZ-nt-7rr" secondAttribute="top" constant="50" id="Ua2-C0-eZH"/>
+                            <constraint firstItem="PlM-sj-TEU" firstAttribute="leading" secondItem="RdZ-nt-7rr" secondAttribute="leading" constant="10" id="bKL-7X-aqT"/>
                             <constraint firstItem="inF-hy-0yk" firstAttribute="leading" secondItem="RdZ-nt-7rr" secondAttribute="leading" id="xVa-ta-rVX"/>
                         </constraints>
                     </view>
@@ -139,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7RF-d3-UQ4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="568"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="AdN-Vx-fJ8" detailTextLabel="wYC-Cv-fF2" style="IBUITableViewCellStyleSubtitle" id="LcV-B5-dm5">
@@ -172,13 +188,21 @@
                                     <outlet property="delegate" destination="ngR-hM-6qE" id="Jmc-sQ-pvY"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Casos de covid por país" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiw-iT-PBH">
+                                <rect key="frame" x="10" y="10" width="307" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iC1-1o-HaC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7RF-d3-UQ4" firstAttribute="top" secondItem="iC1-1o-HaC" secondAttribute="top" id="FKf-HX-Rgn"/>
+                            <constraint firstItem="7RF-d3-UQ4" firstAttribute="top" secondItem="iC1-1o-HaC" secondAttribute="top" constant="50" id="FKf-HX-Rgn"/>
                             <constraint firstItem="iC1-1o-HaC" firstAttribute="trailing" secondItem="7RF-d3-UQ4" secondAttribute="trailing" id="LDA-nL-kfa"/>
+                            <constraint firstItem="xiw-iT-PBH" firstAttribute="leading" secondItem="iC1-1o-HaC" secondAttribute="leading" constant="10" id="VbA-Ws-O0E"/>
                             <constraint firstItem="7RF-d3-UQ4" firstAttribute="leading" secondItem="iC1-1o-HaC" secondAttribute="leading" id="cKf-7C-uQg"/>
+                            <constraint firstItem="xiw-iT-PBH" firstAttribute="top" secondItem="iC1-1o-HaC" secondAttribute="top" constant="10" id="dvJ-2o-Ybq"/>
                             <constraint firstItem="iC1-1o-HaC" firstAttribute="bottom" secondItem="7RF-d3-UQ4" secondAttribute="bottom" id="l4b-xD-vid"/>
                         </constraints>
                     </view>

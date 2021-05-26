@@ -45,7 +45,7 @@ class CovidViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tablaCovid.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         celda.textLabel?.text = paises[indexPath.row].country!
-        celda.detailTextLabel?.text = "\(paises[indexPath.row].cases!)"
+        celda.detailTextLabel?.text = "Casos: \(paises[indexPath.row].cases!)"
         return celda
     }
 
