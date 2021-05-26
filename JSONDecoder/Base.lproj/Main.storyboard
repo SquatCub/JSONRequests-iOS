@@ -67,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="-77"/>
+            <point key="canvasLocation" x="924" y="-540"/>
         </scene>
         <!--Noticias-->
         <scene sceneID="zi2-P1-7Pk">
@@ -128,7 +128,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mF-AP-YcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="598"/>
+            <point key="canvasLocation" x="924" y="121"/>
+        </scene>
+        <!--Covid-->
+        <scene sceneID="qaa-OF-bHJ">
+            <objects>
+                <viewController id="ngR-hM-6qE" customClass="CovidViewController" customModule="JSONDecoder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WmF-eE-SJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7RF-d3-UQ4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="AdN-Vx-fJ8" detailTextLabel="wYC-Cv-fF2" style="IBUITableViewCellStyleSubtitle" id="LcV-B5-dm5">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="55.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LcV-B5-dm5" id="awJ-Kr-F40">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AdN-Vx-fJ8">
+                                                    <rect key="frame" x="16" y="10" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wYC-Cv-fF2">
+                                                    <rect key="frame" x="16" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ngR-hM-6qE" id="Rcx-LG-gQR"/>
+                                    <outlet property="delegate" destination="ngR-hM-6qE" id="Jmc-sQ-pvY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iC1-1o-HaC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7RF-d3-UQ4" firstAttribute="top" secondItem="iC1-1o-HaC" secondAttribute="top" id="FKf-HX-Rgn"/>
+                            <constraint firstItem="iC1-1o-HaC" firstAttribute="trailing" secondItem="7RF-d3-UQ4" secondAttribute="trailing" id="LDA-nL-kfa"/>
+                            <constraint firstItem="7RF-d3-UQ4" firstAttribute="leading" secondItem="iC1-1o-HaC" secondAttribute="leading" id="cKf-7C-uQg"/>
+                            <constraint firstItem="iC1-1o-HaC" firstAttribute="bottom" secondItem="7RF-d3-UQ4" secondAttribute="bottom" id="l4b-xD-vid"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Covid" image="chart.bar.xaxis" catalog="system" id="Pjz-h1-W5e"/>
+                    <connections>
+                        <outlet property="tablaCovid" destination="7RF-d3-UQ4" id="vH3-cS-s9i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RO1-7R-091" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="780"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="V8g-xb-586">
@@ -136,6 +197,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="f8c-Cy-gYI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DrI-IA-hQq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.88755155460000001" green="0.3960019595" blue="0.14590653170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -144,6 +206,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="VTo-ho-QZS"/>
                         <segue destination="UU4-11-K6A" kind="relationship" relationship="viewControllers" id="wBq-8G-Kj2"/>
+                        <segue destination="ngR-hM-6qE" kind="relationship" relationship="viewControllers" id="8C7-an-FCE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3k-kB-Tf9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -152,6 +215,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chart.bar.xaxis" catalog="system" width="128" height="98"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="tray.full.fill" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
